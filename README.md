@@ -9,6 +9,7 @@
 - **Emotion Prediction**: Recognize emotions such as Happy, Sad, Angry, Neutral, and more using a trained convolutional neural network (CNN).
 - **Efficient Preprocessing**: Grayscale conversion, normalization, and resizing for optimal model input.
 - **Interactive Output**: Display detected faces and their predicted emotions directly on the webcam feed.
+- **Flask Web App**: A web interface to interact with the emotion recognition model, providing a user-friendly way to test real-time emotion detection.
 
 ---
 
@@ -94,6 +95,16 @@ Real-Time Emotion Detection in Action
 ![Screenshot 2024-11-27 222626](https://github.com/user-attachments/assets/88a0c741-426d-465b-85aa-ac04c0d77888)
 
 ---
+
+### 📸 Demo - Flask Web App
+Real-Time Emotion Detection through the Flask interface
+
+The web app interface:
+![Screenshot 2024-12-02 012110](https://github.com/user-attachments/assets/25e4fbee-ccea-4d5b-8d3a-a679b95a22b6)
+![WhatsApp Image 2024-12-03 at 11 38 05 PM](https://github.com/user-attachments/assets/f057e542-0744-4fa9-84c0-7cd6f4f076ef)
+![Screenshot 2024-12-02 022122](https://github.com/user-attachments/assets/cfacb0ef-25fb-4f2a-9027-01c67a745ca3)
+![Screenshot 2024-12-02 022150](https://github.com/user-attachments/assets/e8ec4e64-d680-4634-bb3c-e07840996185)
+
 
 ### 🤝 Contributions
 Contributions are welcome! Feel free to fork the repository and submit pull requests with improvements, bug fixes, or new features.
