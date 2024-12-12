@@ -1,28 +1,32 @@
-# Emotion Recognition Using Face Detection 🎭🤖
+# 🎭 Emotion Recognition Using Face Detection 🤖
 
 **A deep learning-based project for recognizing emotions through facial expressions in real-time! This project leverages OpenCV for face detection and a trained deep learning model for emotion classification. Perfect for exploring AI applications in human emotion analysis!**
 
 ---
 
 ## 🚀 Features
-- **Real-Time Face Detection**: Detect faces from a live webcam feed using OpenCV's Haar Cascade Classifier.
-- **Emotion Prediction**: Recognize emotions such as Happy, Sad, Angry, Neutral, and more using a trained convolutional neural network (CNN).
-- **Efficient Preprocessing**: Grayscale conversion, normalization, and resizing for optimal model input.
-- **Interactive Output**: Display detected faces and their predicted emotions directly on the webcam feed.
-- **Flask Web App**: A web interface to interact with the emotion recognition model, providing a user-friendly way to test real-time emotion detection.
+- **Real-Time Face Detection**: Detect faces from a live webcam feed using OpenCV's Haar Cascade Classifier.📹
+- **Emotion Prediction**: Recognize emotions such as Happy, Sad, Angry, Neutral, and more using a trained convolutional neural network (CNN).😄 😢 😡 😐
+- **Efficient Preprocessing**: Grayscale conversion, normalization, and resizing for optimal model input.🔄
+- **Interactive Output**: Display detected faces and their predicted emotions directly on the webcam feed.💡
+- **Flask Web App**: A web interface to interact with the emotion recognition model, providing a user-friendly way to test real-time emotion detection.🌐
 
 ---
 
 ## 📂 Repository Structure
 ```bash
 Emotion-Recognition-Using-Face-Detection/
-├── model_file.h5             # Trained model file
-├── haarcascade_frontalface_default.xml  # Haar Cascade file for face detection
-├── train_model.ipynb         # Jupyter Notebook for training the emotion recognition model
-├── real_time_emotion.py      # Main Python script for real-time emotion recognition
-├── requirements.txt          # Dependencies for the project
-├── README.md                 # Project documentation
-└── images/                   # Sample images or screenshots of the application
+├── data/                             # Dataset folder
+├── static/                           # Static files (CSS, JS, etc.)
+├── templates/                        # HTML templates for Flask app
+├── uploads/                          # Uploaded files for processing
+├── runtime_emotion_detection.py      # Script for real-time detection
+├── model.py                          # Training and model definition
+├── my_model.h5                       # Pre-trained model
+├── haarcascade_frontalface_default.xml  # Haar Cascade file
+├── app.py                            # Main Flask app
+├── README.md                         # Project documentation
+└── requirements.txt                  # Dependencies for the project
 ```
 
 ---
@@ -69,14 +73,14 @@ The emotion recognition model is a Convolutional Neural Network (CNN) trained on
 - Surprise 😲
 
 #### Model Accuracy:
-The model achieves an accuracy of **67%** on the FER-2013 test dataset. While this provides a solid foundation for recognizing emotions from facial expressions, there's room for improvement. We aim to fine-tune the model for better real-world performance.
+The model achieves an accuracy of **75%** on the FER-2013 test dataset. While this provides a solid foundation for recognizing emotions from facial expressions, there's room for improvement. We aim to fine-tune the model for better real-world performance.
 
 ---
 ### 🎯 Future Enhancements
-- **Add More Emotions**: Train the model to recognize additional emotions like Fear, Disgust, etc.
-- **Improve Accuracy**: Fine-tune the model for better real-world performance.
-- **Multi-Face Detection**: Extend the application to predict emotions for multiple faces simultaneously.
-- **Web Integration**: Create a web-based interface for wider accessibility.
+-✨ **Add More Emotions**: Train the model to recognize additional emotions like Fear, Disgust, etc.
+-🔧 **Improve Accuracy**: Fine-tune the model for better real-world performance.
+-👥 **Multi-Face Detection**: Extend the application to predict emotions for multiple faces simultaneously.
+-🌐 **Web Integration**: Create a web-based interface for wider accessibility.
 
 ---
 
