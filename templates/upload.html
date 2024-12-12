@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facial Expression Recognition</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            padding: 100px;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: black;
+            display:grid;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+        text-align: center;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        max-width: 700px;
+        width: 90%;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            color: #4e4e50;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        input[type="file"] {
+            margin-bottom: 20px;
+        }
+
+        button {
+            margin-top: 40px;
+            padding: 12px 25px;
+            background-color: #6a11cb;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1em;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2575fc;
+        }
+
+        img {
+            max-width: 70%;
+            height: 70%;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+.cta {
+            margin-top: 40px;
+            padding: 12px 25px;
+            background-color: #6a11cb;
+            color:white;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1em;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        .cta:hover {
+            background-color: #2575fc;
+        }
+
+        footer {
+            margin-top: 400px;
+            display: block;
+            font-size: 20px;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            60% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Facial Expression Recognition</h1>
+        <p>
+            Welcome to the Facial Expression Recognition system! 
+            Upload an image of a face to capture an emotions.
+        </p>
+        <form method="POST" action="/upload" enctype="multipart/form-data">
+            <input type="file" name="file" required>
+            <br>
+            <button type="submit">Upload and Process</button>
+            <a href="/" class="cta">Go Back!</a>
+
+        </form>
+
+        {% if output_image %}
+            <h3>Processed Image:</h3>
+            <img src="{{ url_for('static', filename='uploads/' + output_image) }}" alt="Processed Image">
+        {% endif %}
+    </div>
+    
+    <footer>
+        Powered by Deep Learning and Flask. Built for real-time emotion analysis.
+    </footer>
+
+    
+</body>
+</html>

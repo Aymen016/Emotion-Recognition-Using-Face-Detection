@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detected</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .container {
+        text-align: center;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        max-width: 900px;
+        width: 90%;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        color: #333;
+        margin-bottom: 20px;
+        animation: bounceIn 1s ease-out;
+    }
+
+    h3 {
+        color: #666;
+        font-size: 1.2em;
+        margin-bottom: 40px;
+        font-weight: 400;
+
+    }
+    
+    a {
+            font-size: 1em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            background-color: #af4c86;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px #4c60af;
+            display:inline-block;
+            transition: all 0.3s ease; /* Smooth transition for hover effect */
+            margin-top: 50px; /* Space from the bottom */
+
+        }
+
+        /* Hover effect */
+        a:hover {
+            color: white;
+            background-color: #d66ddf;
+            transform: translateY(-5px); /* Slightly lift the link on hover */
+        }
+    @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            60% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to Real-Time Emotion Detection!</h1>
+        <h3>Discover the power of AI as we predict emotions directly from webcam video feed.</h3>
+
+        <div class="content">
+            <p>This cutting-edge application utilizes computer vision and deep learning to detect and classify emotions in real-time. Whether you are curious about how AI understands facial expressions or want to integrate this technology, you've come to the right place!</p>
+            <p>Our system uses advanced neural networks to predict emotions such as happiness, sadness, anger, and more, instantly as you interact with the webcam.
+
+            </p>
+        </div>
+        <a href="/main" target="_blank">Go for Real-Time Emotion Detection!!!</a>
+        <a href="/upload" target="_blank">Upload Image & Detect Emotions!!!</a>
+    </div>
+</body>
+</html>
