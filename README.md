@@ -77,10 +77,10 @@ The model achieves an accuracy of **75%** on the FER-2013 test dataset. While th
 
 ---
 ### 🎯 Future Enhancements
--✨ **Add More Emotions**: Train the model to recognize additional emotions like Fear, Disgust, etc.
--🔧 **Improve Accuracy**: Fine-tune the model for better real-world performance.
--👥 **Multi-Face Detection**: Extend the application to predict emotions for multiple faces simultaneously.
--🌐 **Web Integration**: Create a web-based interface for wider accessibility.
+-✨ **Add More Emotions**: Train the model to recognize additional emotions like Fear, Disgust, etc.\n
+-🔧 **Improve Accuracy**: Fine-tune the model for better real-world performance.\n
+-👥 **Multi-Face Detection**: Extend the application to predict emotions for multiple faces simultaneously.\n
+-🌐 **Web Integration**: Create a web-based interface for wider accessibility.\n
 
 ---
 
