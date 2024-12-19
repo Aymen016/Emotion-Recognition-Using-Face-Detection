@@ -109,7 +109,18 @@ The web app interface:
 ![Screenshot 2024-12-02 022122](https://github.com/user-attachments/assets/cfacb0ef-25fb-4f2a-9027-01c67a745ca3)
 ![Screenshot 2024-12-02 022150](https://github.com/user-attachments/assets/e8ec4e64-d680-4634-bb3c-e07840996185)
 
+---
 
 ### 🤝 Contributions
 Contributions are welcome! Feel free to fork the repository and submit pull requests with improvements, bug fixes, or new features.
+
+---
+## 👨‍💻 About the Author
+
+**Aymen Baig**  
+A passionate developer and aspiring Data Scientist specializing in Machine Learning and Natural Language Processing. Experienced in building lightweight and efficient chatbot systems for small businesses. Always open to collaborations and learning new technologies.
+
+- **GitHub**: [Aymen Baig](https://github.com/Aymen016/)
+- **LinkedIn**: [Aymen Baig](https://www.linkedin.com/in/aymen-baig-700a06284/)
+
 
