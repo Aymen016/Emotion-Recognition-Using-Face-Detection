@@ -1,6 +1,9 @@
 # 🎭 Emotion Recognition Using Face Detection 🤖
 
 **A deep learning-based project for recognizing emotions through facial expressions in real-time! This project leverages OpenCV for face detection and a trained deep learning model for emotion classification. Perfect for exploring AI applications in human emotion analysis!**
+<br>
+
+![Untitled design (2)](https://github.com/user-attachments/assets/4c44e861-4f31-469c-9d71-3506816aa81c)
 
 ---
 
